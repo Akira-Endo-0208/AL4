@@ -41,7 +41,7 @@ void GameScene::Initialize(DirectXCommon* dxCommon, Input* input)
 	//座標{ 0, 0 }にテクスチャ2番のスプライト生成
 	sprite1 = Sprite::Create(2, { 0,0 });
 	//座標{ 500, 500 }にテクスチャ2番のスプライト生成
-	sprite2 = Sprite::Create(2, { 500,500 },{1,0,0,1},{0,0},false,true);
+	sprite2 = Sprite::Create(2, { 500,500 }, { 1,0,0,1 }, { 0,0 }, false, true);
 	// 3Dオブジェクト生成
 	object3d = Object3d::Create();
 	object3d->Update();
@@ -128,8 +128,8 @@ void GameScene::Draw()
 	/// <summary>
 	/// ここに前景スプライトの描画処理を追加できる
 	/// </summary>
-	sprite1->Draw();
-	sprite2->Draw();
+	//sprite1->Draw();
+	//sprite2->Draw();
 	// デバッグテキストの描画
 	debugText.DrawAll(cmdList);
 

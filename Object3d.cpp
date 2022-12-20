@@ -412,7 +412,7 @@ void Object3d::CreateModel()
 	std::vector<VertexPosNormalUv> realVertices;
 
 	std::ifstream file;
-	const string modelname = "triangle_mat";
+	const string modelname = "gun";
 	const string filename = modelname + ".obj"; //"triangle_mat.obj"
 	const string directoryPath = "Resources/" + modelname + "/"; //Resources/triangle_mat/"
 		file.open(directoryPath + filename);
